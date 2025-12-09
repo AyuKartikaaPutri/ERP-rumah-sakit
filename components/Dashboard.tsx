@@ -1,7 +1,6 @@
 import React from 'react';
 import { 
-  AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
-  BarChart, Bar, Cell
+  AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer
 } from 'recharts';
 import { Activity, Users, CreditCard, Clock } from 'lucide-react';
 import { revenueData, mockPatients } from '../services/mockData';
