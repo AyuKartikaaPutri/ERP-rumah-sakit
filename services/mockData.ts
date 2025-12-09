@@ -1,4 +1,4 @@
-import { Patient, InventoryItem, RevenueData } from '../types';
+import { Patient, InventoryItem, RevenueData, Transaction, FinanceMetric } from '../types';
 
 export const mockPatients: Patient[] = [
   { id: 'P-001', name: 'Eleanor Sterling', age: 45, gender: 'Female', admissionDate: '2023-10-24', diagnosis: 'Hypertension', status: 'Stable', room: '304-A' },
@@ -23,4 +23,21 @@ export const revenueData: RevenueData[] = [
   { name: 'Fri', revenue: 55000, patients: 142 },
   { name: 'Sat', revenue: 67000, patients: 160 },
   { name: 'Sun', revenue: 58000, patients: 145 },
+];
+
+export const mockTransactions: Transaction[] = [
+  { id: 'TRX-9801', date: '2023-10-27', description: 'Insurance Claim Payout - Allstate', category: 'Insurance', amount: 15400, type: 'Income', status: 'Completed' },
+  { id: 'TRX-9802', date: '2023-10-27', description: 'Pharmacy Supplier Payment', category: 'Inventory', amount: 3200, type: 'Expense', status: 'Completed' },
+  { id: 'TRX-9803', date: '2023-10-26', description: 'Patient Payment - P-003', category: 'Service Fee', amount: 850, type: 'Income', status: 'Completed' },
+  { id: 'TRX-9804', date: '2023-10-26', description: 'Maintenance Services', category: 'Facilities', amount: 1200, type: 'Expense', status: 'Pending' },
+  { id: 'TRX-9805', date: '2023-10-25', description: 'Monthly Staff Payroll', category: 'Salary', amount: 45000, type: 'Expense', status: 'Completed' },
+];
+
+export const financeMetrics: FinanceMetric[] = [
+  { month: 'Jun', income: 120000, expense: 85000 },
+  { month: 'Jul', income: 135000, expense: 90000 },
+  { month: 'Aug', income: 128000, expense: 82000 },
+  { month: 'Sep', income: 142000, expense: 95000 },
+  { month: 'Oct', income: 155000, expense: 98000 },
+  { month: 'Nov', income: 148000, expense: 92000 },
 ];

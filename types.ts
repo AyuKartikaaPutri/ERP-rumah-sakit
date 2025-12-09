@@ -34,3 +34,19 @@ export interface RevenueData {
   revenue: number;
   patients: number;
 }
+
+export interface Transaction {
+  id: string;
+  date: string;
+  description: string;
+  category: string;
+  amount: number;
+  type: 'Income' | 'Expense';
+  status: 'Completed' | 'Pending' | 'Failed';
+}
+
+export interface FinanceMetric {
+  month: string;
+  income: number;
+  expense: number;
+}

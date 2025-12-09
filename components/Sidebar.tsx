@@ -1,5 +1,5 @@
 import React from 'react';
-import { LayoutDashboard, Users, Pill, Settings, Activity, FileText } from 'lucide-react';
+import { LayoutDashboard, Users, Pill, Settings, Activity, FileText, Wallet } from 'lucide-react';
 
 interface SidebarProps {
   activeTab: string;
@@ -11,6 +11,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
     { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
     { id: 'patients', label: 'Patient Management', icon: Users },
     { id: 'pharmacy', label: 'Pharmacy & Inventory', icon: Pill },
+    { id: 'finance', label: 'Finance & Accounting', icon: Wallet },
     { id: 'reports', label: 'Medical Reports', icon: FileText },
     { id: 'monitoring', label: 'Live Monitoring', icon: Activity },
     { id: 'settings', label: 'Settings', icon: Settings },
@@ -52,8 +53,8 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
       <div className="p-4 border-t border-slate-100">
         <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl p-4 text-white shadow-xl">
           <p className="text-xs text-slate-300 uppercase font-semibold mb-1">On Call</p>
-          <p className="font-medium text-sm">Dr. A. Rahman</p>
-          <p className="text-xs text-slate-400 mt-1">Chief Surgeon</p>
+          <p className="font-medium text-sm">Ayu Kartika Putri</p>
+          <p className="text-xs text-slate-400 mt-1">Hospital Director</p>
         </div>
       </div>
     </aside>

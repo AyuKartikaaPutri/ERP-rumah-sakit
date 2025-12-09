@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
 import Pharmacy from './components/Pharmacy';
+import Finance from './components/Finance';
 import { Bell, Search, UserCircle, Menu } from 'lucide-react';
 
 // Placeholder for Patient Management Component (Simplified for this file size limit)
@@ -25,6 +26,8 @@ const App: React.FC = () => {
         return <Pharmacy />;
       case 'patients':
         return <PatientManagement />;
+      case 'finance':
+        return <Finance />;
       default:
         return (
           <div className="flex flex-col items-center justify-center h-[60vh] text-slate-400">
@@ -66,8 +69,8 @@ const App: React.FC = () => {
             </button>
             <div className="flex items-center gap-3 pl-4 border-l border-slate-200">
               <div className="text-right hidden sm:block">
-                <p className="text-sm font-medium text-slate-700">Dr. A. Rahman</p>
-                <p className="text-xs text-slate-400">Admin Access</p>
+                <p className="text-sm font-medium text-slate-700">Ayu Kartika Putri</p>
+                <p className="text-xs text-slate-400">Hospital Director</p>
               </div>
               <div className="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center overflow-hidden ring-2 ring-white shadow-sm">
                 <UserCircle className="w-full h-full text-slate-400" />
